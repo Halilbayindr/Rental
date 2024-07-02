@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <h2>Rezervasyon Listeleri</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Kullanıcı ID</th>
+          <th>Araç ID</th>
+          <th>Başlangıç Tarihi</th>
+          <th>Bitiş Tarihi</th>
+          <th>Onay Durumu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ps of p">
+          <td>{{ ps.rentalId }}</td>
+          <td>{{ ps.vehicleId }}</td>
+          <td>{{ ps.userId }}</td>
+          <td>{{ ps.rentalStartDate| date }}</td>
+          <td>{{ ps.rentalEndDate| date }}</td>
+          <td>{{ ps.isApproved ? 'Onaylı' : 'Onay Bekliyor' }}</td>
+          <td>
+            <button (click)="approveReservation(ps.rentalId)" *ngIf="!ps.isApproved">Onayla</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{9B66728F-1CA2-4555-BCC1-9D57E15FD499}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RenACarProjectApi/Models/User.cs">
+    <Files>
+      <File FileName="RenACarProjectApi/Models/User.cs" Line="14" Column="1" />
+      <File FileName="RenACarProjectApi/Models/Vehicle.cs" Line="16" Column="32" />
+      <File FileName="RenACarProjectApi/Models/Rental.cs" Line="1" Column="1" />
+      <File FileName="RenACarProjectApi/Models/RentalRequest.cs" Line="1" Column="1" />
+      <File FileName="RenACarProjectApi/Context/RentACarContextDB.cs" />
+      <File FileName="RenACarProjectApi/Controllers/UserController.cs" Line="22" Column="36" />
+      <File FileName="RenACarProjectApi/appsettings.json" Line="1" Column="1" />
+      <File FileName="RenACarProjectApi/Program.cs" Line="44" Column="8" />
+      <File FileName="RenACarProjectApi/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="RenACarProjectApi/Controllers/VehicleConroller.cs" Line="53" Column="1" />
+      <File FileName="RenACarProjectApi/Controllers/LoginController.cs" Line="142" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RenACarProjectApi">
+            <Node name="RenACarProjectApi">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="User.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.RenACarProjectApi PreferredExecutionTarget="/Users/halilibrahimbayindir/Desktop/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

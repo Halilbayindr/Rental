@@ -1,0 +1,36 @@
+<!-- 
+<div>
+    <h2>Rezervasyon Listesi</h2>
+    <ul>
+      <li *ngFor="let vehicle of vehicles">
+         {{ vehicle.brand }}
+      </li>
+    </ul> -->
+  
+    
+
+  
+
+    <div  class="card-group">
+        <div class="card" *ngFor="let vehicle of vehicles" style="margin-left: 15px;">
+          <img src="../assets/image/toyotacorolla.jpeg" class="card-img-top" alt="...">
+            <div class="card-body" >
+                <h5 class="card-title"  ><span style="color: brown;">Marka</span> {{vehicle.brand}}</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Model</span> {{vehicle.model}}</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Kasa Tipi</span> {{vehicle.type}}</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Vites Türü</span> {{vehicle.transmissionType}}</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Yakıt Türü</span> {{vehicle.fuelType}}</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Günlük Ücreti</span> {{vehicle.dailyRentalPrice}} TL</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Koltuk Sayısı</span> {{vehicle.seatCount}}</h5>
+                <h5 class="card-title"  ><span style="color: brown;">Kapı Sayısı</span> {{vehicle.doorCount}}</h5>
+                <!-- <h5 class="card-title"  >{{vehicle.hasAirConditioning}}</h5> -->
+              <button>Rezervasyon</button>
+            
+            </div>
+        </div>
+       
+       
+      </div>
+
+      
+      
