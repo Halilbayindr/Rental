@@ -11,6 +11,10 @@ export class RentACarService {
   constructor(private http: HttpClient) { }
   
   private apiUrl='http://localhost:5001/api/VehicleConroller';
+
+  getAllVehicles(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
+  }
   getVehicles():Observable<Vehicle[]>{
     //return this.http.get<Vehicle[]>(`${this.apiUrl}/vehicles`);
     //return this.http.get<Vehicle[]>(this.apiUrl);

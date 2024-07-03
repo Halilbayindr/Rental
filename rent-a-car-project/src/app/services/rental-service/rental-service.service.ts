@@ -12,8 +12,8 @@ export class RentalServiceService {
   getAllReservations(): Observable<Rental[]> {
     return this.http.get<Rental[]>(`${this.apiUrl}`);
   }
-  addRental(rental: Rental): Observable<Rental> {
-    return this.http.post<Rental>(this.apiUrl, rental);
+  addRental(reservation: any): Observable<any> {
+    return this.http.post(this.apiUrl, reservation);
 }
 approveReservation(rentalId: number): Observable<any> {
   return this.http.put<any>(`${this.apiUrl}${rentalId}`, null);

@@ -9,9 +9,10 @@ public class Rental
 	public DateTime rentalStartDate { get; set; }
 	public DateTime rentalEndDate { get; set; }
 	public bool isApproved { get; set; } = false;
+    public decimal TotalCost { get; set; } // Toplam maliyet
 
 
-	public User User { get; set; }
+    public User User { get; set; }
 	public Vehicle Vehicle { get; set; }
 
 }

@@ -9,6 +9,7 @@ import * as jwt_decode from 'jwt-decode'; // Import decode function from jwt-dec
 
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -60,5 +61,11 @@ isAdmin(): boolean {
 }
 isUSer():boolean{
   return localStorage.getItem('role')==='User'
+}
+getUserId(): number | null {
+  const userId = localStorage.getItem('userId');
+  console.log(userId); // Kullanıcı kimliğini kontrol edin
+
+  return userId ? parseInt(userId, 10) : null;
 }
 }

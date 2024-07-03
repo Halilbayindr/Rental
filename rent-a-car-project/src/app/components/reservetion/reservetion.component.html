@@ -1,0 +1,11 @@
+<!-- reservation.component.html -->
+<form (ngSubmit)="makeRezervation()" #reservationForm="ngForm">
+    <!-- Form alanları -->
+    <select [(ngModel)]="selectedVehicle" name="vehicle" (change)="onVehicleChange()">
+      <option *ngFor="let vehicle of vehicles" [ngValue]="vehicle">{{ vehicle.brand }} {{ vehicle.model }}</option>
+    </select>
+    <input type="date" [(ngModel)]="rezervation.rentalStartDate" name="rentalStartDate" (change)="calculateTotalCost()" required>
+    <input type="date" [(ngModel)]="rezervation.rentalEndDate" name="rentalEndDate" (change)="calculateTotalCost()" required>
+    <p>Toplam Maliyet: {{ totalCost | currency }}</p>
+    <button type="submit">Rezervasyon Yap</button>
+  </form>

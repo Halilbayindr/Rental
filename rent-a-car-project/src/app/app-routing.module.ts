@@ -5,6 +5,7 @@ import { VehicleListComponent } from './components/vehicle-list/vehicle-list.com
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RentalListComponent } from './components/rental-list/rental-list.component';
+import { ReservetionComponent } from './components/reservetion/reservetion.component';
 
 const routes: Routes = [
   
@@ -12,6 +13,7 @@ const routes: Routes = [
     {path: 'vehicles', component: VehicleListComponent},
     {path: 'login', component: LoginComponent},
     {path: 'rentallist', component:RentalListComponent},
+    {path: 'rezervation', component:ReservetionComponent},
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     {path: 'register', component:RegisterComponent},
     { path: '**', redirectTo: '/login' }

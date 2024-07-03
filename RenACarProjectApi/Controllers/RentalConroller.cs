@@ -37,15 +37,32 @@ public class RentalConroller : ControllerBase
 
         return rental;
     }
-    [HttpPost]
+    //[HttpPost]
 
-    public async Task<ActionResult<Rental>> PostRental(Rental rental)
+    //public async Task<ActionResult<Rental>> PostRental(Rental rental)
+    //{
+    //    _context.Rentals.Add(rental);
+    //    await _context.SaveChangesAsync();
+    //    return CreatedAtAction(nameof(GetRental), new { rental.RentalId }, rental);
+
+
+    //}
+    [HttpPost]
+    [HttpPost]
+    public async Task<ActionResult<Rental>> CreateRental(Rental rental)
     {
+        var vehicle = await _context.Vehicles.FindAsync(rental.VehicleId);
+        if (vehicle == null)
+        {
+            return NotFound();
+        }
+
+        rental.TotalCost = (decimal)(rental.rentalEndDate - rental.rentalStartDate).TotalDays * vehicle.DailyRentalPrice;
+
         _context.Rentals.Add(rental);
         await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetRental), new { rental.RentalId }, rental);
 
-
+        return CreatedAtAction("GetRental", new { id = rental.RentalId }, rental);
     }
     [HttpPut("{id}")]
 

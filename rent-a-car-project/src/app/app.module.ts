@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { RentalListComponent } from './components/rental-list/rental-list.component';
 import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
+import { ReservetionComponent } from './components/reservetion/reservetion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.com
     LoginComponent,
     RegisterComponent,
     RentalListComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    ReservetionComponent
   
 
   ],
